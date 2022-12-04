@@ -8,14 +8,15 @@
 </head>
 <body>
     <script>
-        let tien,laisuat,tienlai,thoigian,cagocvalai;
+        let tien,laisuat,tienlai,thoigian;
         tien=prompt("Nhập số tiền muốn gửi ngân hàng");
         thoigian=prompt("Nhập thời gian muốn gửi");
-        tienlai=tien*laisuat;
-        laisuat=0.069;
-        cagoclanlai=tien+tienlai*thoigian;
+        laisuat=prompt("Nhập lãi suất");
+        tien*=1
+        tienlai=tien+(tien*laisuat)/100*thoigian
+       
         
-        document.write("tiền lãi sau khi gửi là "+tienlai+" Triệu đồng")
+        document.write("tiền lãi sau khi gửi là "+tienlai)
     </script>
 </body>
 </html>
